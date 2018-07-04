@@ -1,0 +1,336 @@
+/*STYLE UNTUK HALAMAN INDEX*/
+
+/*reset padding dan margin default*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    position: relative;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Proxima Nova;
+}
+
+.container {
+    min-height: 100vh;
+    position: relative;
+    color: #1a1a1a;
+}
+
+/*STYLING HEADER*/
+#header {
+    background-size: cover;
+    background-image: url(../img/bghome.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon {
+    position: absolute;
+}
+#icon-utama {
+    width: 200px;
+    top: 160px;
+    left: 450px;
+}
+#icon-utama:hover {
+    left: 500px;
+    opacity: 0.2;
+}
+#icon-kecil {
+    width: 40px;
+    top: 500px;
+    left: 200px;
+}
+#icon-kecil:hover {
+    top: 520px;
+    opacity: 0.2;
+}
+
+/*STYLING HOME*/
+#home {
+    background-size: cover;
+    background-image: url(../img/bgbook.png);
+    background-attachment: fixed;
+ }
+    /*NAVBAR DAN DROPDOWN*/
+.navbar {
+    background-color: #1a1a1a;
+    padding: 20px 0px 30px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+.navbar img {
+    position: absolute;
+    left: 100px;
+    top: 5px;
+    height: 130px;
+}
+.menu {
+    position: absolute;
+    float: right;
+    top: 0px;
+    right: 100px;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    float: right;
+}
+li {
+    float: left;
+    overflow: hidden;
+}
+li a{
+    display: inline-block;
+    color: #F4F4F4;
+    text-align: left;
+    padding:16px 20px 16px;
+    text-decoration: none;
+    float: center;
+    font-size: 17px;
+}
+li a:hover, .dropdown:hover{
+    background-color: #df8d41;
+    color: #1a1a1a;
+}
+li a.active{
+    background-color: #f4f4f4;
+    color: white;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #df8d41;
+    z-index: 1;
+}
+.dropdown-content a{
+    color: #1a1a1a;
+    padding: 10px 35px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    background-color: #1a1a1a;
+    color: #F4F4F4;
+}
+
+.dropdown:hover .dropdown-content{
+    color: black;
+    display: block;
+}
+
+.container-gambar {
+    position: absolute;
+    background-color: #1a1a1a;
+    top: 150px;
+    margin: auto;
+    width : 94%;
+    height: 80%;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    margin-left: 38px;
+}
+
+/*STYLING ABOUT*/
+#about{
+    background-color: #F4F4F4;
+    padding-left: 3%;
+    padding-right: 3%;
+    color: #1a1a1a;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../img/bgsignin.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#about h1{
+    color: #1a1a1a;
+    margin-bottom: 80px;
+}
+#about h1:hover{
+    padding-left: 100px;
+    color: #593d32;
+}
+#ab {
+    background-color: #df8d41;
+    opacity: 0.9;
+    height: 100vh;
+    padding-top: 100px;
+}
+.container-dalam{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+#kiri {
+    position: absolute;
+    float: left;
+    background-size: cover;
+    background-position: center;
+}/*
+#kiri:hover {
+    opacity: 0.8;
+}*/
+#kanan {
+    float: right;
+    height: 80vh;
+    width: 80vh;
+    padding-top: 100px;
+    padding-left: 30px;
+    margin-left: 30px;
+}
+#kanan p {
+    font-size: 17px;
+    text-align: left;
+}
+
+/*STYLING FOOTER*/
+#footer{
+    font-size: 17px;
+    padding-bottom: 3%;
+}
+#find-us {
+    padding-top: 100px;
+    height: 80vh;
+    background-color: #F4F4F4;
+}
+#find-us h1 {
+    color: #1a1a1a;
+}
+#find-us h1:hover{
+    color: #808080;
+}
+#sos{
+    padding-top: 40px;
+    padding-left: 200px;
+    font-size: 17px;
+}
+#find-us p {
+    font-size: 17px;
+    text-align: center;
+}
+
+/*sosmed*/
+.katalog {
+    margin: 3px;
+    border: none;
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.katalog:hover {
+    width: 230px;
+    height: 230px;
+}
+.katalog img {
+    width: 100%;
+    height: 100%;
+}
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+/*MODAL GAMBAR*/
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 50px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
